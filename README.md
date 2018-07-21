@@ -26,15 +26,15 @@ Open [localhost:3000](http://localhost:3000/) to see the application
 
 If you are using 3000, simply open [server.js](https://github.com/potatozerg/EvolentHealth/blob/master/server.js) and change it to an unused port
 
+To run unit test:
+
 ```
 npm test
 ```
 
-to run unit test
+## Application Details
 
 This single page application contains 3 views, main(table), list and detail.
-
-## Application Details
 
 The main(table) view contains a table of contacts. You can access and edit details of each contacts by clicking the contact you want to edit. However, you are not allowed to delete any of them here.
 
