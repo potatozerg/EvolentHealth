@@ -22,7 +22,7 @@ npm start
 
 to start the server
 
-Open localhost:3000 to see the application
+Open [localhost:3000](http://localhost:3000/) to see the application
 
 If you are using 3000, simply open [server.js](https://github.com/potatozerg/EvolentHealth/blob/master/server.js) and change it to an unused port
 
