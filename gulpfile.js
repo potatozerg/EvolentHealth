@@ -1,13 +1,12 @@
-var gulp = require('gulp');
-var minifyCSS = require('gulp-csso');
-var concat = require('gulp-concat');
-var clean = require('gulp-clean');
-var sourcemaps = require('gulp-sourcemaps');
-var runSequence = require('run-sequence');
+const gulp = require('gulp');
+const minifyCSS = require('gulp-csso');
+const concat = require('gulp-concat');
+const sourcemaps = require('gulp-sourcemaps');
+const runSequence = require('run-sequence');
+const del = require('del');
 
-gulp.task('clean', function() {
-    gulp.src('./build/**')
-      .pipe(clean({force: true}));
+gulp.task('build-clean', function() {
+    return del(['build']);
 });
 
 gulp.task('html', function(){
@@ -30,11 +29,9 @@ gulp.task('js', function(){
     .pipe(gulp.dest('build/js'));
 });
 
-// gulp.task('build', [ 'html', 'css', 'js' ]);
-
 gulp.task('build', function() {
   runSequence(
-    ['clean'],
+    ['build-clean'],
     ['html', 'css', 'js' ]
   );
 });

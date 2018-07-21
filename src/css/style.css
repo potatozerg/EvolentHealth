@@ -4,13 +4,14 @@
 
 .title {
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .nav {
   display: inline-block;
   float: right;
   padding-top: 20px;
+  margin-right: 20px;
 }
 
 i {

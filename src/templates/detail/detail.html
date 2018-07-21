@@ -2,13 +2,13 @@
 <div class="detailView">
   <form name="contactForm">
     <p>First Name</p>
-    <input ng-model="new.firstName" type="text" name="firstName" ng-change="saveData(); validation(0)" ng-style="style(0)" required>
+    <input ng-model="new.firstName" type="text" name="firstName" ng-change="saveData(); validation(0)" ng-style="style(0)" autocomplete='given-name' required>
     <p>Last Name</p>
-    <input ng-model="new.lastName" type="text" name="lastName" ng-change="saveData(); validation(1)" ng-style="style(1)" required>
+    <input ng-model="new.lastName" type="text" name="lastName" ng-change="saveData(); validation(1)" ng-style="style(1)" autocomplete='family-name' required>
     <p>Email</p>
-    <input ng-model="new.email" type="email" name="email" ng-change="saveData(); validation(2)" ng-style="style(2)" required>
+    <input ng-model="new.email" type="email" name="email" ng-change="saveData(); validation(2)" ng-style="style(2)" autocomplete='email' required>
     <p>Phone Number</p>
-    <input ng-model="new.phoneNumber" type="text" name="phoneNumber" ng-change="saveData(); validation(3)" ng-style="style(3)" required>
+    <input ng-model="new.phoneNumber" type="text" name="phoneNumber" ng-change="saveData(); validation(3)" ng-style="style(3)" autocomplete='tel' required>
     <p>Status</p>
     <select ng-model="new.status" ng-change="saveData()">
       <option value="Active">Active</option>
