@@ -1,0 +1,20 @@
+<!-- Tile View -->
+<div class="tableView">
+  <table class="list">
+    <tr>
+      <th width="10%">First Name</th>
+      <th width="10%">Last Name</th>
+      <th width="20%">Email</th>
+      <th width="10%">Phone Number</th>
+      <th width="10%">Status</th>
+    </tr>
+    <tr class="contact" ng-repeat="contact in contacts track by $index" ng-click="detailView(contact, $index)" ng-style="{{style[$index]}}">
+      <td width="10%">{{contact.firstName}}</td>
+      <td width="10%">{{contact.lastName}}</td>
+      <td width="20%">{{contact.email}}</td>
+      <td width="10%">{{contact.phoneNumber}}</td>
+      <td width="10%">{{contact.status}}</td>
+    </tr>
+  </table>
+
+</div>

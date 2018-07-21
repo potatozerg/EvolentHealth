@@ -1,0 +1,26 @@
+<!-- Detail View -->
+<div class="detailView">
+  <form name="contactForm">
+    <p>First Name</p>
+    <input ng-model="new.firstName" type="text" name="firstName" ng-change="saveData(); validation(0)" ng-style="style(0)" required>
+    <p>Last Name</p>
+    <input ng-model="new.lastName" type="text" name="lastName" ng-change="saveData(); validation(1)" ng-style="style(1)" required>
+    <p>Email</p>
+    <input ng-model="new.email" type="email" name="email" ng-change="saveData(); validation(2)" ng-style="style(2)" required>
+    <p>Phone Number</p>
+    <input ng-model="new.phoneNumber" type="text" name="phoneNumber" ng-change="saveData(); validation(3)" ng-style="style(3)" required>
+    <p>Status</p>
+    <select ng-model="new.status" ng-change="saveData()">
+      <option value="Active">Active</option>
+      <option value="Inactive">Inactive</option>
+    </select><br>
+  </form>
+
+  <div class="buttons">
+    <button id="back" ng-click="back()">Back</button>
+    <button id="save" ng-click="save()"
+      ng-disabled="!(contactForm.firstName.$valid && contactForm.lastName.$valid && contactForm.email.$valid && contactForm.phoneNumber.$valid)">
+      Save
+    </button>
+  </div>
+</div>
