@@ -8,6 +8,8 @@ Please install Node.js first, then simply run
 npm i
 ```
 
+to install the dependencies in the local node_modules folder.
+
 ```
 npm run build
 ```
@@ -18,9 +20,11 @@ to build
 npm start
 ```
 
-And open localhost:3000 to see my work
+to start the server
 
-If you are using 3000, simply open server.js and change it to an unused port
+Open localhost:3000 to see the application
+
+If you are using 3000, simply open [server.js](https://github.com/potatozerg/EvolentHealth/blob/master/server.js) and change it to an unused port
 
 ```
 npm test
@@ -42,6 +46,6 @@ All data in this application is stored in LocalStorage once you initialize them.
 
 ## Folder Structure
 
-The folder structure is really simple. In the root, the server.js is the one starts the server, package.json is to manage all the info about this project, karma.conf.js is the unit testing config file, gulpfile.js is the build config file.
+The folder structure is really simple. In the root, the [server.js](https://github.com/potatozerg/EvolentHealth/blob/master/server.js) is the one starts the server, [package.json](https://github.com/potatozerg/EvolentHealth/blob/master/package.json) is to manage all the info about this project, [karma.conf.js](https://github.com/potatozerg/EvolentHealth/blob/master/karma.conf.js) is the unit testing config file, [gulpfile.js](https://github.com/potatozerg/EvolentHealth/blob/master/gulpfile.js) is the build config file.
 
 In the src folder, it contains 3 folders, css folder that contains css files, js folder that contains js source files and template folder contains html file and controller(js) for each view. In the root of src folder, there is the main controller and the base view. For each controller, there is a spec.js file for its unit testing.
